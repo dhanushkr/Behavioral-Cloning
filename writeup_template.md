@@ -62,7 +62,7 @@ For details about how I created the training data, see the next section.
 ### Model Architecture and Training Strategy
 
 #### 1. Solution Design Approach
-
+NVIDIA neural network architechture to drive autonomous vechile was used where the last layer contains only singe output. More data was added my flipping the images. Augmented the data by flipping images by adding a nagtive angle andapplied correction factor for left/right images. More data could be used to make the model give better performance by adding second track data, reverse driving on the track. 
 
 #### 2. Final Model Architecture
 ```
@@ -101,3 +101,4 @@ Non-trainable params: 0
 The data used are:
 - Udacity data on track 1
 - Manually created dataset on track 1
+- The model iterates on 3 EPOCHS, whihc proved enough to cover the track complelety 
